@@ -80,7 +80,7 @@ else {
 <body>
 
 <div class="container mt-3">
-  <h2>MAX&MIN</h2>
+  <h2>calc grade</h2>
   <form method="get" action="<?php echo $_SERVER["PHP_SELF"];?>">
 
     <div class="mb-3 mt-3">
