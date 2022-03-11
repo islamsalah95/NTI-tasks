@@ -1,5 +1,5 @@
 <?php
-//   if (isset($_GET['operation'])){
+  if (isset($_GET['operation'])){
 $x  = $_GET['num1'];
 $y  = $_GET['num2'];
 $z  = $_GET['num3'];
@@ -30,13 +30,17 @@ if ($x >= $y and $x >= $z){
     
     }
 
+    echo  "<div class='alert alert-success'> $max </div>" ;
+
+    echo "  <div class='alert alert-danger'> $min </div> ";
+  
+  }
 
 
 
+//  echo  "<div class='alert alert-success'> $max </div>" ;
 
- echo  "<div class='alert alert-success'> $max </div>" ;
-
- echo "  <div class='alert alert-danger'> $min </div> ";
+//  echo "  <div class='alert alert-danger'> $min </div> ";
 
 
 

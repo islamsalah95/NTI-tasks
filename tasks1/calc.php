@@ -5,7 +5,7 @@ $y  = $_GET['second'];
 $op = $_GET['operation'];
 
 
-$results = " " ;
+$results = "1" ;
 
 switch ($op) {
     case     'add': $results = $x + $y ;
@@ -22,11 +22,14 @@ switch ($op) {
  
 }
 
+echo  "<div class='alert alert-success'> $results </div>" ;
+
+
   }
 
 
 
- echo  "<div class='alert alert-success'> $results </div>" ;
+//  echo  "<div class='alert alert-success'> $results </div>" ;
 
 
 
