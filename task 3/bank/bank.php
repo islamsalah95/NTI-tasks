@@ -147,21 +147,5 @@ echo "<table class='table table-striped'>
 </body>
 </html>
 
-
-
-
-
-
-
-}
-  
-
-}
-
-
-
-
-?>
-
 </body>
 </html>
