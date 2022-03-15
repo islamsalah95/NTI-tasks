@@ -5,24 +5,27 @@ $y  = $_GET['second'];
 $op = $_GET['operation'];
 
 
-$results = "1" ;
 
 switch ($op) {
-    case     'add': $results = $x + $y ;
+    case     '+': $results = $x + $y ;
         break;
     
-        case 'sub': $results = $x - $y ;
+        case '-': $results = $x - $y ;
         break;
 
-        case 'pro': $results = $x * $y ;
+        case '*': $results = $x * $y ;
         break;
 
-        case 'div': $results = $x / $y ;
+        case '/': $results = $x / $y ;
         break;
  
 }
 
-echo  "<div class='alert alert-success'> $results </div>" ;
+
+
+
+
+ echo  "<div class='alert alert-success'> $results </div>" ;
 
 
   }
@@ -47,11 +50,11 @@ echo  "<div class='alert alert-success'> $results </div>" ;
 </head>
 <body>
 
-<div class="container mt-3">
+<div class="container mt-1"  width = 50px;  >
   <h2>calculator</h2>
   <form method="get" action="<?php echo $_SERVER["PHP_SELF"];?>">
 
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-1">
       <label for="first">first :</label>
       <input type="number" class="form-control" id="first" placeholder="first" name="first">
     </div>
@@ -62,14 +65,16 @@ echo  "<div class='alert alert-success'> $results </div>" ;
 
 
    
-    <input type="submit" value="add" name= "operation" class="btn btn-primary">
-    <input type="submit" value="sub" name= "operation" class="btn btn-primary">
-    <input type="submit" value="pro" name= "operation" class="btn btn-primary">
-    <input type="submit" value="div" name= "operation" class="btn btn-primary">
+    <input type="submit" value="+" name= "operation" class="btn btn-primary">
+    <input type="submit" value="-" name= "operation" class="btn btn-primary">
+    <input type="submit" value="*" name= "operation" class="btn btn-primary">
+    <input type="submit" value="/" name= "operation" class="btn btn-primary">
+    
 
 
   </form>
 </div>
+
 
 </body>
 </html>
