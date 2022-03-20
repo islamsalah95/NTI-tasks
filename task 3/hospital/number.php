@@ -8,7 +8,6 @@ if ( !empty($_GET['pho'])  ) {
 
 header('location:review.php');
 
-
     }
 
   }
@@ -40,6 +39,8 @@ header('location:review.php');
   <button type="submit" class="btn btn-primary">send</button>
 </form>
  
+
+
 
 
 
