@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "3f568c6c-3244-40f5-955a-1efabf91ab84",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http:/127.0.0.1:8000/api/v1/products?Accept=application/json",
+							"protocol": "https",
+							"host": [
+								"http"
+							],
+							"port": "",
+							"path": [
+								"",
+								"127.0.0.1:8000",
+								"api",
+								"v1",
+								"products"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create products page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http:/127.0.0.1:8000/api/v1/products/create?Accept=application/json",
+							"protocol": "https",
+							"host": [
+								"http"
+							],
+							"port": "",
+							"path": [
+								"",
+								"127.0.0.1:8000",
+								"api",
+								"v1",
+								"products",
+								"create"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit product page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http:/127.0.0.1:8000/api/v1/products/60/edit?Accept=application/json",
+							"protocol": "https",
+							"host": [
+								"http"
+							],
+							"port": "",
+							"path": [
+								"",
+								"127.0.0.1:8000",
+								"api",
+								"v1",
+								"products",
+								"60",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name_en",
+									"value": "laptop api",
+									"type": "text"
+								},
+								{
+									"key": "name_ar",
+									"value": "لب توب",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "55555",
+									"type": "text"
+								},
+								{
+									"key": "details_en",
+									"value": "ss",
+									"type": "text"
+								},
+								{
+									"key": "details_ar",
+									"value": "ss",
+									"type": "text"
+								},
+								{
+									"key": "brand_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xamppp/htdocs/b16-master/ecommerce/assets/img/brands/oppo.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://http:/127.0.0.1:8000/api/v1/products/store?Accept=application/json",
+							"protocol": "https",
+							"host": [
+								"http"
+							],
+							"port": "",
+							"path": [
+								"",
+								"127.0.0.1:8000",
+								"api",
+								"v1",
+								"products",
+								"store"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name_en",
+									"value": "laptop",
+									"type": "text"
+								},
+								{
+									"key": "name_ar",
+									"value": "لاب توب",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "44444",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "details_en",
+									"value": "dd",
+									"type": "text"
+								},
+								{
+									"key": "details_ar",
+									"value": "dd",
+									"type": "text"
+								},
+								{
+									"key": "brand_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xamppp/htdocs/b16-master/ecommerce/assets/img/brands/lg.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://http:/127.0.0.1:8000/api/v1/products/update/60?Accept=applicatiom/json",
+							"protocol": "https",
+							"host": [
+								"http"
+							],
+							"port": "",
+							"path": [
+								"",
+								"127.0.0.1:8000",
+								"api",
+								"v1",
+								"products",
+								"update",
+								"60"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "applicatiom/json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delet product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://http:/127.0.0.1:8000/api/v1/products/delet/60?Accept=application/json",
+							"protocol": "https",
+							"host": [
+								"http"
+							],
+							"port": "",
+							"path": [
+								"",
+								"127.0.0.1:8000",
+								"api",
+								"v1",
+								"products",
+								"delet",
+								"60"
+							],
+							"query": [
+								{
+									"key": "Accept",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

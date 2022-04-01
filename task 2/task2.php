@@ -43,7 +43,7 @@ $users = [
 [
   'id' => 3,
   'name' => 'salah',
-  "gender" => 'm',
+  "gender" => 'male',
   'hobbies' => [
       'football', 'swimming', 'running'
   ],
