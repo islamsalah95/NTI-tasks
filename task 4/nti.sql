@@ -375,38 +375,6 @@ INSERT INTO `subcategories` (`id`, `name_en`, `name_ar`, `status`, `image`, `cre
 (5, 'teshirts', 'تى شيرت', 1, NULL, '2022-03-26 16:41:09', '2022-03-26 17:24:46', 2);
 
 -- --------------------------------------------------------
-
---
--- Table structure for table `users`
---
-
-CREATE TABLE `users` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `first_name` varchar(15) NOT NULL,
-  `last_name` varchar(15) NOT NULL,
-  `phone` varchar(11) NOT NULL,
-  `email` varchar(40) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `image` varchar(256) NOT NULL DEFAULT 'capture.jpg',
-  `gender` varchar(1) DEFAULT 'm' COMMENT 'male default',
-  `forget_code` smallint(5) DEFAULT NULL,
-  `verification_code` smallint(5) UNSIGNED NOT NULL,
-  `status` tinyint(1) DEFAULT 1,
-  `remember_token` varchar(255) NOT NULL,
-  `email_verified_at` timestamp NULL DEFAULT NULL,
-  `code_expiration_at` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `first_name`, `last_name`, `phone`, `email`, `password`, `image`, `gender`, `forget_code`, `verification_code`, `status`, `remember_token`, `email_verified_at`, `code_expiration_at`, `created_at`, `updated_at`) VALUES
-(41, 'islam', 'hussein', '01272570173', 'islamm1955@gmail.com', '$2y$10$FFIIBIZ19cuwXl2FD.r3SewuLEPEthKZvzMoXBGng7bGnLZJRZeye', 'capture.jpg', 'm', NULL, 65535, 1, '', NULL, NULL, '2022-03-26 01:53:35', '2022-03-26 01:53:35');
-
---
 -- Indexes for dumped tables
 --
 
